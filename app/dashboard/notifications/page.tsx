@@ -1,0 +1,94 @@
+'use client'
+import { useEffect, useState } from 'react'
+import { Bell, CheckCheck, Info, CheckCircle, AlertTriangle, XCircle } from 'lucide-react'
+import { formatDate } from '@/lib/utils'
+import Link from 'next/link'
+import toast from 'react-hot-toast'
+import { useLang } from '@/lib/useLang'
+import { t } from '@/lib/i18n'
+
+const TYPE_ICONS: any = {
+  info:    { icon: Info,          color: '#60a5fa', bg: '#60a5fa12' },
+  success: { icon: CheckCircle,   color: '#10B981', bg: '#10B98112' },
+  warning: { icon: AlertTriangle, color: '#EAB308', bg: '#EAB30812' },
+  error:   { icon: XCircle,       color: '#f87171', bg: '#f8717112' },
+}
+
+export default function NotificationsPage() {
+  const { lang } = useLang()
+  const [notifications, setNotifications] = useState<any[]>([])
+  const [unreadCount, setUnreadCount] = useState(0)
+  const [loading, setLoading] = useState(true)
+
+  const fetchNotifications = async () => {
+    const res = await fetch('/api/notifications')
+    const data = await res.json()
+    setNotifications(data.notifications || [])
+    setUnreadCount(data.unreadCount || 0)
+    setLoading(false)
+  }
+
+  useEffect(() => { fetchNotifications() }, [])
+
+  const markAllRead = async () => {
+    await fetch('/api/notifications', { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ markAll: true }) })
+    setNotifications(n => n.map(x => ({ ...x, isRead: true })))
+    setUnreadCount(0)
+    toast.success(t(lang, 'dashboard.markAllRead'))
+  }
+
+  if (loading) return <div className="flex items-center justify-center h-64"><div className="w-10 h-10 rounded-full border-2 border-[#EAB308] border-t-transparent animate-spin" /></div>
+
+  return (
+    <div className="max-w-2xl space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-black mb-1">{t(lang, 'dashboard.notificationsTitle')}</h1>
+          <p className="text-gray-500 text-sm">
+            {unreadCount > 0 ? `${unreadCount} ${t(lang, 'dashboard.unread')}` : t(lang, 'dashboard.allCaughtUp')}
+          </p>
+        </div>
+        {unreadCount > 0 && (
+          <button onClick={markAllRead} className="flex items-center gap-2 text-sm hover:underline" style={{ color: '#EAB308' }}>
+            <CheckCheck size={16} /> {t(lang, 'dashboard.markAllRead')}
+          </button>
+        )}
+      </div>
+
+      <div className="space-y-3">
+        {notifications.length === 0 ? (
+          <div style={{ background: '#11131E', border: '1px solid #1E293B', borderRadius: 16, padding: '64px 24px', textAlign: 'center' }}>
+            <Bell size={40} className="mx-auto mb-3 opacity-20 text-gray-600" />
+            <p className="text-gray-600">{t(lang, 'dashboard.noNotifications')}</p>
+          </div>
+        ) : notifications.map((notif: any) => {
+          const meta = TYPE_ICONS[notif.type] || TYPE_ICONS.info
+          const Icon = meta.icon
+          return (
+            <div key={notif.id} style={{
+              background: notif.isRead ? '#11131E' : '#11131E',
+              border: `1px solid ${notif.isRead ? '#1E293B' : '#EAB30830'}`,
+              borderRadius: 14, padding: '18px 20px',
+              display: 'flex', gap: 16, transition: 'all 0.2s',
+            }}>
+              <div style={{ width: 40, height: 40, borderRadius: 10, background: meta.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <Icon size={18} style={{ color: meta.color }} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between gap-2">
+                  <div className={`font-semibold text-sm ${notif.isRead ? 'text-gray-300' : 'text-white'}`}>{notif.title}</div>
+                  {!notif.isRead && <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#EAB308', flexShrink: 0, marginTop: 4 }} />}
+                </div>
+                <p className="text-gray-500 text-sm mt-1 leading-relaxed">{notif.message}</p>
+                <div className="flex items-center justify-between mt-2">
+                  <span className="text-gray-600 text-xs">{formatDate(notif.createdAt)}</span>
+                  {notif.link && <Link href={notif.link} className="text-xs hover:underline" style={{ color: '#EAB308' }}>View →</Link>}
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
