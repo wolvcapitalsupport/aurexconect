@@ -25,7 +25,7 @@ const PLANS = [
       '5% referral bonus',
       '24/7 support access',
     ],
-    desc: 'The structured entry point to APXFund. Complete 2 cycles, then migrate your capital to a higher-yield plan.',
+    desc: 'The structured entry point to aurexconnect. Complete 2 cycles, then migrate your capital to a higher-yield plan.',
     note: 'Starter Portfolio is limited to 2 cycles per account. After completion, capital migrates to your chosen next plan.',
   },
   {
@@ -139,7 +139,7 @@ export default function InvestmentPlansPage() {
         <div className="bg-[#c9a84c]/8 border border-[#c9a84c]/25 rounded-2xl p-5 flex items-start gap-4">
           <AlertCircle size={20} className="text-[#c9a84c] flex-shrink-0 mt-0.5" />
           <div>
-            <div className="font-bold text-[#c9a84c] text-sm mb-1">How APXFund Plans Work</div>
+            <div className="font-bold text-[#c9a84c] text-sm mb-1">How Aurexconnect Plans Work</div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Starter Portfolio is limited to <strong className="text-white">2 cycles per account</strong>. After completing both cycles, your capital is held and you migrate to Growth Fund, Apex Fund, or Sovereign Tier. All profits are withdrawable at every cycle end. Capital in active plans is locked until maturity.
             </p>

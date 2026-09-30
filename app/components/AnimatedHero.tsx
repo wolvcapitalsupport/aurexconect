@@ -47,7 +47,7 @@ export default function AnimatedHero() {
           Redefining <span className="text-[#c9a84c]">Financial</span> Freedom
         </h1>
         <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-          Secure your future with APXFund’s institutional-grade investment strategies.
+          Secure your future with aurexconnect’s institutional-grade investment strategies.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-[#c9a84c] text-black px-10 py-4 rounded-full font-bold hover:bg-white transition-colors">

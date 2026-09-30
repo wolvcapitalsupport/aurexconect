@@ -595,7 +595,7 @@ index a61dfde..9a5479e 100644
 +++ b/app/policies/page.tsx
 @@ -15,6 +15,10 @@ const SECTIONS = [
      title: '3. Investment Plans & Returns',
-     content: `APXFund offers four investment plans: Gold (8% ROI/24h), Platinum (15% ROI/3 days), Diamond (25% ROI/7 days), and VIP (50% ROI/14 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk.`,
+     content: `aurexconnect offers four investment plans: Gold (8% ROI/24h), Platinum (15% ROI/3 days), Diamond (25% ROI/7 days), and VIP (50% ROI/14 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk.`,
    },
 +  {
 +    title: '3a. Starter Portfolio Cycle Limit & Migration',
@@ -603,7 +603,7 @@ index a61dfde..9a5479e 100644
 +  },
    {
      title: '4. Deposits',
-     content: `Deposits are accepted via Bitcoin (BTC), Ethereum (ETH), and Tether (USDT/TRC20). All deposits must include a valid transaction hash for verification. Deposits are subject to administrative review and are typically credited within 30 minutes of blockchain confirmation. APXFund reserves the right to reject deposits that cannot be verified or that originate from sanctioned addresses.`,
+     content: `Deposits are accepted via Bitcoin (BTC), Ethereum (ETH), and Tether (USDT/TRC20). All deposits must include a valid transaction hash for verification. Deposits are subject to administrative review and are typically credited within 30 minutes of blockchain confirmation. Aurexconnect reserves the right to reject deposits that cannot be verified or that originate from sanctioned addresses.`,
 diff --git a/components/MigrationBanner.tsx b/components/MigrationBanner.tsx
 new file mode 100644
 index 0000000..98568dd

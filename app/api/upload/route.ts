@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     const apiSecret = process.env.CLOUDINARY_API_SECRET!
 
     const timestamp = Math.floor(Date.now() / 1000).toString()
-    const folder = 'apxfund'
+    const folder = 'aurexconnect'
     const toSign = `folder=${folder}&timestamp=${timestamp}${apiSecret}`
     const signature = crypto.createHash('sha256').update(toSign).digest('hex')
 

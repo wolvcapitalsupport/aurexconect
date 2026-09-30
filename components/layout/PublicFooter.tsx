@@ -88,8 +88,8 @@ export default function PublicFooter() {
             </div>
             <div className="flex items-center gap-2.5">
               <span>✉️</span>
-              <a href="mailto:support@apxfund.xyz" className="hover:text-[#c9a84c] transition-colors">
-                support@apxfund.xyz
+              <a href="mailto:support@aurexconnect.xyz" className="hover:text-[#c9a84c] transition-colors">
+                support@aurexconnect.xyz
               </a>
             </div>
             <div className="flex items-center gap-2.5">
@@ -152,7 +152,7 @@ export default function PublicFooter() {
       {/* Bottom bar */}
       <div className="border-t border-[#1e1e35] py-5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <span>© {new Date().getFullYear()} APXFund. All Rights Reserved.</span>
+          <span>© {new Date().getFullYear()} aurexconnect. All Rights Reserved.</span>
           <div className="flex items-center gap-5">
             <Link href="/policies" className="hover:text-[#c9a84c] transition-colors">Privacy Policy</Link>
             <Link href="/policies" className="hover:text-[#c9a84c] transition-colors">Terms of Service</Link>

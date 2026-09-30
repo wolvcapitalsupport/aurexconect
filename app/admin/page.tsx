@@ -947,7 +947,7 @@ export default function AdminPage() {
       <div className="border-b border-[#1e1e35] bg-[#12121f] px-8 py-5 flex items-center justify-between flex-wrap gap-4">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg bg-purple-500/20 border border-purple-500/30 flex items-center justify-center"><Shield size={18} className="text-purple-400" /></div>
-          <div><div className="text-purple-400 text-xs font-semibold uppercase tracking-widest">Admin Panel</div><h1 className="text-xl font-black">APXFund Administration</h1></div>
+          <div><div className="text-purple-400 text-xs font-semibold uppercase tracking-widest">Admin Panel</div><h1 className="text-xl font-black">aurexconnect Administration</h1></div>
         </div>
         <a href="/dashboard" className="text-sm text-gray-400 hover:text-white border border-[#1e1e35] px-4 py-2 rounded-xl hover:border-[#c9a84c]/40 transition-all">← Dashboard</a>
       </div>
@@ -1159,60 +1159,60 @@ function WalletsTab() {
 const EMAIL_TEMPLATES = [
   {
     name: 'Welcome',
-    subject: 'Welcome to APXFund — Your Account is Ready',
+    subject: 'Welcome to Aurexconnect — Your Account is Ready',
     body: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a14;color:#ffffff;padding:40px;border-radius:12px;">
   <div style="text-align:center;margin-bottom:32px;">
     <h1 style="color:#c9a84c;font-size:28px;margin:0;">APX<span style="color:#ffffff;">Fund</span></h1>
   </div>
   <h2 style="color:#c9a84c;">Welcome aboard! 🎉</h2>
-  <p>Your APXFund account is now active. You can start investing immediately.</p>
+  <p>Your Aurexconnect account is now active. You can start investing immediately.</p>
   <p>Complete your KYC verification to unlock full platform access and higher investment limits.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Go to Dashboard</a>
+    <a href="https://aurexconnect.xyz/dashboard" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Go to Dashboard</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
   {
     name: 'Deposit Confirmed',
-    subject: 'Your Deposit Has Been Confirmed — APXFund',
+    subject: 'Your Deposit Has Been Confirmed — Aurexconnect',
     body: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a14;color:#ffffff;padding:40px;border-radius:12px;">
   <h1 style="color:#c9a84c;">APX<span style="color:#ffffff;">Fund</span></h1>
   <h2>✅ Deposit Confirmed</h2>
   <p>Your deposit has been verified and your balance has been credited.</p>
   <p>You can now invest in any available plan that matches your balance.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard/plans" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">View Investment Plans</a>
+    <a href="https://aurexconnect.xyz/dashboard/plans" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">View Investment Plans</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
   {
     name: 'KYC Approved',
-    subject: 'Your Identity Has Been Verified — APXFund',
+    subject: 'Your Identity Has Been Verified — Aurexconnect',
     body: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a14;color:#ffffff;padding:40px;border-radius:12px;">
   <h1 style="color:#c9a84c;">APX<span style="color:#ffffff;">Fund</span></h1>
   <h2>✅ KYC Verification Approved</h2>
   <p>Your identity verification has been completed successfully.</p>
-  <p>You now have full access to all APXFund investment plans and features.</p>
+  <p>You now have full access to all Aurexconnect investment plans and features.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Explore Plans</a>
+    <a href="https://aurexconnect.xyz/dashboard" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Explore Plans</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
   {
     name: 'KYC Rejected',
-    subject: 'Action Required: KYC Verification Update — APXFund',
+    subject: 'Action Required: KYC Verification Update — Aurexconnect',
     body: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a14;color:#ffffff;padding:40px;border-radius:12px;">
   <h1 style="color:#c9a84c;">APX<span style="color:#ffffff;">Fund</span></h1>
   <h2>⚠️ KYC Verification — Action Required</h2>
   <p>We were unable to verify your identity with the documents submitted.</p>
   <p>Please re-submit with clearer images ensuring all document details are fully visible.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard/kyc" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Resubmit Documents</a>
+    <a href="https://aurexconnect.xyz/dashboard/kyc" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Resubmit Documents</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
   {
@@ -1231,23 +1231,23 @@ const EMAIL_TEMPLATES = [
   </div>
   <p>The difference between staying in your current plan and upgrading is not just percentage points — on larger capital it compounds into significantly higher payouts every single cycle.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard/plans" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Upgrade My Plan Now</a>
+    <a href="https://aurexconnect.xyz/dashboard/plans" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">Upgrade My Plan Now</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
   {
     name: 'Withdrawal Processed',
-    subject: 'Your Withdrawal Has Been Processed — APXFund',
+    subject: 'Your Withdrawal Has Been Processed — Aurexconnect',
     body: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0a0a14;color:#ffffff;padding:40px;border-radius:12px;">
   <h1 style="color:#c9a84c;">APX<span style="color:#ffffff;">Fund</span></h1>
   <h2>💸 Withdrawal Processed</h2>
   <p>Your withdrawal request has been approved and the funds have been sent to your wallet.</p>
   <p>Please allow 1–3 network confirmations for the transfer to fully reflect in your wallet.</p>
   <div style="text-align:center;margin:32px 0;">
-    <a href="https://apxfund.xyz/dashboard/transactions" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">View Transactions</a>
+    <a href="https://aurexconnect.xyz/dashboard/transactions" style="background:linear-gradient(135deg,#c9a84c,#e8cc7a);color:#0a0a14;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;">View Transactions</a>
   </div>
-  <p style="color:#666;font-size:12px;">APXFund | support@apxfund.xyz</p>
+  <p style="color:#666;font-size:12px;">Aurexconnect | support@aurexconnect.xyz</p>
 </div>`,
   },
 ]

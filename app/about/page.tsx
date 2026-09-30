@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import { CheckCircle, ArrowRight, Users, DollarSign, Globe, TrendingUp } from 'lucide-react'
 
 const MILESTONES = [
-  { year: '2016', event: 'APXFund founded. Initial trading in stocks, shares, and bonds.' },
+  { year: '2016', event: 'aurexconnect founded. Initial trading in stocks, shares, and bonds.' },
   { year: '2018', event: 'Expanded into Forex trading markets. First international office opened.' },
   { year: '2019', event: 'Entered cryptocurrency trading. Among pioneer institutional BTC traders.' },
   { year: '2021', event: 'Reached $10M total investor payouts. Team expanded to 80+ professionals.' },
@@ -34,7 +34,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="text-[#c9a84c] text-sm font-semibold uppercase tracking-widest mb-4">Who We Are</div>
-          <h1 className="text-5xl md:text-6xl font-black mb-6">About <span className="gold-text">APXFund</span></h1>
+          <h1 className="text-5xl md:text-6xl font-black mb-6">About <span className="gold-text">Aurexconnect</span></h1>
           <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
             A globally trusted asset management company delivering institutional-quality returns to everyday investors since 2016.
           </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
             <div className="text-[#c9a84c] text-sm font-semibold uppercase tracking-widest mb-4">Our Story</div>
             <h2 className="text-4xl font-black mb-6 leading-tight">Built on <span className="gold-text">Expertise & Trust</span></h2>
             <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
-              <p>APXFund is a United States-based Asset and Stock Management Company with affiliates in Europe, Asia, and the Middle East. We are dedicated to managing our clients&apos; portfolios with unmatched precision.</p>
+              <p>Aurexconnect is a United States-based Asset and Stock Management Company with affiliates in Europe, Asia, and the Middle East. We are dedicated to managing our clients&apos; portfolios with unmatched precision.</p>
               <p>Our deep sector knowledge and unrivaled insight into the private fund market allows us to raise capital profitably and efficiently. We thrive on working alongside the most innovative funds and consistently partner with the highest-quality fund managers.</p>
               <p>We employ over 130 professionals and invest heavily in the ongoing research-driven evolution of our quantitative alpha-generating systems across a wide range of liquid asset classes. The company emphasises strong corporate governance and first-class investor service.</p>
               <p>Our directors, together with employees and the Employee Benefit Trust, currently own approximately 98% of the company — giving every member of our team a personal stake in your success.</p>
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="space-y-4">
             <div className="relative rounded-2xl overflow-hidden h-64">
               <Image src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80&auto=format&fit=crop"
-                alt="APXFund office" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
+                alt="Aurexconnect office" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
@@ -92,7 +92,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-black mb-1">Bryce J. McFarlane</h3>
               <div className="text-[#c9a84c] font-semibold mb-4">Chief Executive Officer & Founder</div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                With over 20 years in global asset management, Bryce founded APXFund with a vision to democratise access to institutional-grade investment returns. His background spans quantitative trading, hedge fund management, and regulatory compliance across US and European markets. Under his leadership, APXFund has grown from a small trading desk to a globally recognised investment platform serving clients in 120+ countries.
+                With over 20 years in global asset management, Bryce founded Aurexconnect with a vision to democratise access to institutional-grade investment returns. His background spans quantitative trading, hedge fund management, and regulatory compliance across US and European markets. Under his leadership, Aurexconnect has grown from a small trading desk to a globally recognised investment platform serving clients in 120+ countries.
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-20 text-center max-w-2xl mx-auto px-6">
-        <h2 className="text-4xl font-black mb-4">Join <span className="gold-text">APXFund</span> Today</h2>
+        <h2 className="text-4xl font-black mb-4">Join <span className="gold-text">Aurexconnect</span> Today</h2>
         <p className="text-gray-400 mb-8">14,000+ investors trust us with their wealth. Be part of the journey.</p>
         <Link href="/auth/register" className="btn-gold px-8 py-4 rounded-xl inline-flex items-center gap-2">
           Start Investing <ArrowRight size={18} />

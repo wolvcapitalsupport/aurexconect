@@ -248,7 +248,7 @@ export default function DashboardPage() {
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-3">{data.adminBanner}</p>
             <div className="flex items-center gap-3 flex-wrap">
-              <a href="mailto:support@apxfund.xyz" className={`text-xs font-semibold px-3 py-1.5 rounded-lg border transition-all ${
+              <a href="mailto:support@aurexconnect.xyz" className={`text-xs font-semibold px-3 py-1.5 rounded-lg border transition-all ${
                 data.adminBannerType === 'warning' ? 'text-yellow-400 border-yellow-400/30 hover:bg-yellow-400/10' :
                 data.adminBannerType === 'error' ? 'text-red-400 border-red-400/30 hover:bg-red-400/10' :
                 'text-blue-400 border-blue-400/30 hover:bg-blue-400/10'

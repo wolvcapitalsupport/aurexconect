@@ -77,8 +77,8 @@ index 9a5479e..1f0b76a 100644
    },
    {
      title: '3. Investment Plans & Returns',
--    content: `APXFund offers four investment plans: Gold (8% ROI/24h), Platinum (15% ROI/3 days), Diamond (25% ROI/7 days), and VIP (50% ROI/14 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk.`,
-+    content: `APXFund offers four investment plans: Starter Portfolio (3.5% ROI / 7 days), Growth Fund (12% ROI / 14 days), Apex Fund (22% ROI / 30 days), and Sovereign Tier (38% ROI / 30 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk. Exact rates and minimum/maximum amounts for each plan are displayed on the Investment Plans page at the time of investment and take precedence over this summary if they differ.`,
+-    content: `APXFund offers four investment plans: Starter Portfolio (3.5% ROI / 7 days), Growth Fund (12% ROI / 14 days), Apex Fund (22% ROI / 30 days), and Sovereign Tier (38% ROI / 30 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk. Exact rates and minimum/maximum amounts for each plan are displayed on the Investment Plans page at the time of investment and take precedence over this summary if they differ.`,
++    content: `Aurexconnect offers four investment plans: Starter Portfolio (3.5% ROI / 7 days), Growth Fund (12% ROI / 14 days), Apex Fund (22% ROI / 30 days), and Sovereign Tier (38% ROI / 30 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk. Exact rates and minimum/maximum amounts for each plan are displayed on the Investment Plans page at the time of investment and take precedence over this summary if they differ.`,
    },
    {
      title: '3a. Starter Portfolio Cycle Limit & Migration',
@@ -105,7 +105,7 @@ index 9a5479e..1f0b76a 100644
          <h1 className="text-5xl font-black mb-4">Company <span className="gold-text">Policies</span></h1>
          <p className="text-gray-400">
 -          Last updated: January 2025 · Please read these terms carefully before using APXFund.
-+          Last updated: July 2026 · Please read these terms carefully before using APXFund.
++          Last updated: July 2026 · Please read these terms carefully before using Aurexconnect.
          </p>
        </section>
  

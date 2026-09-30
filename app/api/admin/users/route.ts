@@ -328,7 +328,7 @@ export async function POST(req: NextRequest) {
   await import('@/lib/notifications').then(({ createNotification }) =>
     createNotification(
       user.id,
-      '👋 Welcome to APXFund',
+      '👋 Welcome to aurexconnect',
       'Your account has been created by our team. Complete KYC verification to unlock full access.',
       'info',
       '/dashboard/kyc'

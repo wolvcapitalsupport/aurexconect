@@ -12,7 +12,7 @@ const inter = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'APXFUND',
+  title: 'aurexconnect',
   description: 'Investment Platform',
 }
 

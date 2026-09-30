@@ -5,7 +5,7 @@ import Link from 'next/link'
 const SECTIONS = [
   {
     title: '1. Acceptance of Terms',
-    content: `By registering an account and using the APXFund platform, you confirm that you have read, understood, and agreed to these Terms and Conditions in full. If you do not agree to these terms, you must not use our platform. APXFund reserves the right to update these policies at any time, and continued use of the platform constitutes acceptance of any revisions.`,
+    content: `By registering an account and using the aurexconnect platform, you confirm that you have read, understood, and agreed to these Terms and Conditions in full. If you do not agree to these terms, you must not use our platform. Aurexconnect reserves the right to update these policies at any time, and continued use of the platform constitutes acceptance of any revisions.`,
   },
   {
     title: '2. Eligibility',
@@ -13,7 +13,7 @@ const SECTIONS = [
   },
   {
     title: '3. Investment Plans & Returns',
-    content: `APXFund offers four investment plans: Starter Portfolio (3.5% ROI / 7 days), Growth Fund (12% ROI / 14 days), Apex Fund (22% ROI / 30 days), and Sovereign Tier (38% ROI / 30 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk. Exact rates and minimum/maximum amounts for each plan are displayed on the Investment Plans page at the time of investment and take precedence over this summary if they differ.`,
+    content: `Aurexconnect offers four investment plans: Starter Portfolio (3.5% ROI / 7 days), Growth Fund (12% ROI / 14 days), Apex Fund (22% ROI / 30 days), and Sovereign Tier (38% ROI / 30 days). Returns are credited automatically upon maturity. All plans include capital insurance covering the principal invested. Past performance does not guarantee future results. Investment activities carry inherent risk. Exact rates and minimum/maximum amounts for each plan are displayed on the Investment Plans page at the time of investment and take precedence over this summary if they differ.`,
   },
   {
     title: '3a. Starter Portfolio Cycle Limit & Migration',
@@ -25,15 +25,15 @@ const SECTIONS = [
   },
   {
     title: '4. Deposits',
-    content: `Deposits are accepted via Bitcoin (BTC), Ethereum (ETH), and Tether (USDT/TRC20). All deposits must include a valid transaction hash for verification. Deposits are subject to administrative review and are typically credited within 30 minutes of blockchain confirmation. APXFund reserves the right to reject deposits that cannot be verified or that originate from sanctioned addresses.`,
+    content: `Deposits are accepted via Bitcoin (BTC), Ethereum (ETH), and Tether (USDT/TRC20). All deposits must include a valid transaction hash for verification. Deposits are subject to administrative review and are typically credited within 30 minutes of blockchain confirmation. Aurexconnect reserves the right to reject deposits that cannot be verified or that originate from sanctioned addresses.`,
   },
   {
     title: '5. Withdrawals',
-    content: `Withdrawals are only available to users who have at least one fully matured investment plan. Funds deposited must be placed into an active investment plan and allowed to complete its full duration before a withdrawal request can be submitted. The minimum withdrawal amount is $10 USD. Withdrawal requests are processed within 24 hours of submission. Users are responsible for providing accurate wallet addresses — APXFund accepts no liability for funds sent to incorrect addresses. Withdrawals may be subject to compliance checks and may be delayed where suspicious activity is detected.`,
+    content: `Withdrawals are only available to users who have at least one fully matured investment plan. Funds deposited must be placed into an active investment plan and allowed to complete its full duration before a withdrawal request can be submitted. The minimum withdrawal amount is $10 USD. Withdrawal requests are processed within 24 hours of submission. Users are responsible for providing accurate wallet addresses — Aurexconnect accepts no liability for funds sent to incorrect addresses. Withdrawals may be subject to compliance checks and may be delayed where suspicious activity is detected.`,
   },
   {
     title: '6. KYC & Identity Verification',
-    content: `To comply with global AML and KYC regulations, all users are required to complete identity verification before accessing full platform features. This includes submission of a government-issued photo ID and a selfie. Documents are reviewed by our compliance team within 24-48 hours. APXFund reserves the right to suspend accounts where KYC requirements are not met.`,
+    content: `To comply with global AML and KYC regulations, all users are required to complete identity verification before accessing full platform features. This includes submission of a government-issued photo ID and a selfie. Documents are reviewed by our compliance team within 24-48 hours. Aurexconnect reserves the right to suspend accounts where KYC requirements are not met.`,
   },
   {
     title: '7. Referral Program',
@@ -41,11 +41,11 @@ const SECTIONS = [
   },
   {
     title: '8. Capital Insurance Policy',
-    content: `APXFund maintains an insurance policy covering investor principal against trading losses. In the event trading performance causes a deficit, insured principal is protected up to the value of each individual investment. APXFund also maintains an Employee Negligence cover of up to $1,000,000. Insurance does not cover losses resulting from user error (e.g. incorrect withdrawal addresses) or violations of these terms.`,
+    content: `Aurexconnect maintains an insurance policy covering investor principal against trading losses. In the event trading performance causes a deficit, insured principal is protected up to the value of each individual investment. Aurexconnect also maintains an Employee Negligence cover of up to $1,000,000. Insurance does not cover losses resulting from user error (e.g. incorrect withdrawal addresses) or violations of these terms.`,
   },
   {
     title: '9. Account Security',
-    content: `Users are solely responsible for maintaining the security of their login credentials. APXFund will never ask for your password via email or chat. You must immediately notify us at support@apxfund.xyz if you suspect unauthorised access to your account. APXFund cannot be held liable for losses resulting from compromised credentials caused by user negligence.`,
+    content: `Users are solely responsible for maintaining the security of their login credentials. Aurexconnect will never ask for your password via email or chat. You must immediately notify us at support@aurexconnect.xyz if you suspect unauthorised access to your account. Aurexconnect cannot be held liable for losses resulting from compromised credentials caused by user negligence.`,
   },
   {
     title: '10. Prohibited Activities',
@@ -53,11 +53,11 @@ const SECTIONS = [
   },
   {
     title: '11. Privacy Policy',
-    content: `APXFund collects personal data solely for the purpose of operating the platform, fulfilling regulatory requirements, and improving our services. We do not sell personal data to third parties. Data is stored securely using industry-standard encryption. You may request deletion of your account and associated data by contacting support@apxfund.xyz. Regulatory records may be retained for up to 7 years as required by law.`,
+    content: `Aurexconnect collects personal data solely for the purpose of operating the platform, fulfilling regulatory requirements, and improving our services. We do not sell personal data to third parties. Data is stored securely using industry-standard encryption. You may request deletion of your account and associated data by contacting support@aurexconnect.xyz. Regulatory records may be retained for up to 7 years as required by law.`,
   },
   {
     title: '12. Limitation of Liability',
-    content: `APXFund shall not be liable for any indirect, incidental, or consequential damages arising from use of the platform, including but not limited to loss of profit, loss of data, or business interruption. Our total liability to any individual user shall not exceed the amount invested by that user in the 90 days preceding the event giving rise to the claim.`,
+    content: `Aurexconnect shall not be liable for any indirect, incidental, or consequential damages arising from use of the platform, including but not limited to loss of profit, loss of data, or business interruption. Our total liability to any individual user shall not exceed the amount invested by that user in the 90 days preceding the event giving rise to the claim.`,
   },
   {
     title: '13. Governing Law',
@@ -65,7 +65,7 @@ const SECTIONS = [
   },
   {
     title: '14. Contact',
-    content: `For questions, complaints, or legal notices regarding these policies, please contact: APXFund Compliance Team · 3536 Badger Pond Lane, Pittsburgh, PA 15212, United States · support@apxfund.xyz · +44 7876 263 213`,
+    content: `For questions, complaints, or legal notices regarding these policies, please contact: Aurexconnect Compliance Team · 3536 Badger Pond Lane, Pittsburgh, PA 15212, United States · support@aurexconnect.xyz · +44 7876 263 213`,
   },
 ]
 
@@ -79,7 +79,7 @@ export default function PoliciesPage() {
         <div className="text-[#c9a84c] text-sm font-semibold uppercase tracking-widest mb-4">Legal</div>
         <h1 className="text-5xl font-black mb-4">Company <span className="gold-text">Policies</span></h1>
         <p className="text-gray-400">
-          Last updated: March 2025 · Please read these terms carefully before using APXFund.
+          Last updated: March 2025 · Please read these terms carefully before using Aurexconnect.
         </p>
       </section>
 
@@ -104,7 +104,7 @@ export default function PoliciesPage() {
             <Link href="/auth/register" className="btn-gold px-6 py-3 rounded-xl text-sm">
               Create Account
             </Link>
-            <a href="mailto:support@apxfund.xyz"
+            <a href="mailto:support@aurexconnect.xyz"
               className="px-6 py-3 rounded-xl border border-[#1e1e35] text-gray-300 hover:border-[#c9a84c] text-sm transition-all">
               Contact Support
             </a>

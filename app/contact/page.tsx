@@ -12,8 +12,8 @@ const CONTACT_ITEMS = [
   {
     icon: Mail,
     label: 'Email Support',
-    value: 'support@apxfund.xyz',
-    href: 'mailto:support@apxfund.xyz',
+    value: 'support@aurexconnect.xyz',
+    href: 'mailto:support@aurexconnect.xyz',
     color: '#60a5fa',
   },
   {
@@ -80,7 +80,7 @@ export default function ContactPage() {
           <div className="card-dark p-8">
             <h2 className="text-xl font-black mb-1">Send Us a Message</h2>
             <p className="text-gray-500 text-sm mb-7">We typically respond within 1 hour.</p>
-            <form action={`mailto:support@apxfund.xyz`} method="GET" className="space-y-5">
+            <form action={`mailto:support@aurexconnect.xyz`} method="GET" className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs text-gray-400 mb-1.5">Full Name</label>

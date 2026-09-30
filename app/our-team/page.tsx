@@ -139,9 +139,9 @@ export default function TeamPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-black mb-4">Want to <span className="gold-text">Join Us?</span></h2>
           <p className="text-gray-400 mb-8 leading-relaxed">
-            We&apos;re always looking for exceptional traders, engineers, and financial analysts to join our growing team. Send your CV to careers@apxfund.xyz
+            We&apos;re always looking for exceptional traders, engineers, and financial analysts to join our growing team. Send your CV to careers@aurexconnect.xyz
           </p>
-          <a href="mailto:careers@apxfund.xyz"
+          <a href="mailto:careers@aurexconnect.xyz"
             className="btn-gold px-8 py-3.5 rounded-xl inline-flex items-center gap-2">
             Apply Now <ArrowRight size={16} />
           </a>

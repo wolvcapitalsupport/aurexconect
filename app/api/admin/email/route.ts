@@ -4,8 +4,8 @@ import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { Resend } from 'resend'
 
-const FROM_EMAIL = process.env.EMAIL_FROM || 'APXFund <noreply@apxfund.xyz>'
-const BASE_URL = process.env.NEXTAUTH_URL || 'https://apxfund.xyz'
+const FROM_EMAIL = process.env.EMAIL_FROM || 'aurexconnect <noreply@aurexconnect.xyz>'
+const BASE_URL = process.env.NEXTAUTH_URL || 'https://aurexconnect.xyz'
 
 async function requireAdmin() {
   const session = await getServerSession(authOptions)

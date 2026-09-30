@@ -182,7 +182,7 @@ export default function KycPage() {
             <CheckCircle size={32} style={{ color: '#10B981' }} />
           </div>
           <h2 className="text-xl font-bold mb-2">Identity Verified</h2>
-          <p className="text-gray-500 text-sm">You have full access to all APXFund features.</p>
+          <p className="text-gray-500 text-sm">You have full access to all aurexconnect features.</p>
         </div>
       )}
     </div>

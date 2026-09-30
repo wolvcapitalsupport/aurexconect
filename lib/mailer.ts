@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 
-const FROM = process.env.EMAIL_FROM || 'APXFund <noreply@apxfund.xyz>'
-const BASE = process.env.NEXTAUTH_URL || 'https://apxfund.xyz'
+const FROM = process.env.EMAIL_FROM || 'aurexconnect <noreply@aurexconnect.xyz>'
+const BASE = process.env.NEXTAUTH_URL || 'https://aurexconnect.xyz'
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY)
@@ -20,7 +20,7 @@ function wrap(content: string) {
   <tr><td style="background:#12121f;border:1px solid #1e1e35;border-radius:16px 16px 0 0;padding:28px 36px;text-align:center">
     <a href="${BASE}" style="text-decoration:none">
       <span style="font-size:26px;font-weight:900;letter-spacing:-0.5px">
-        <span style="color:#c9a84c">APX</span><span style="color:#ffffff">Fund</span>
+        <span style="color:#c9a84c">Aure</span><span style="color:#ffffff">xconnect</span>
       </span>
     </a>
   </td></tr>
@@ -32,10 +32,10 @@ function wrap(content: string) {
 
   <!-- Footer -->
   <tr><td style="background:#0d0d1a;border:1px solid #1e1e35;border-top:none;border-radius:0 0 16px 16px;padding:20px 36px;text-align:center">
-    <p style="margin:0 0 6px;font-size:12px;color:#444">© ${new Date().getFullYear()} APXFund. All rights reserved.</p>
+    <p style="margin:0 0 6px;font-size:12px;color:#444">© ${new Date().getFullYear()} Aurexconnect. All rights reserved.</p>
     <p style="margin:0;font-size:11px;color:#333">3536 Badger Pond Lane, Pittsburgh, PA 15212, United States</p>
     <p style="margin:6px 0 0;font-size:11px;color:#333">
-      <a href="mailto:support@apxfund.xyz" style="color:#c9a84c;text-decoration:none">support@apxfund.xyz</a>
+      <a href="mailto:support@aurexconnect.xyz" style="color:#c9a84c;text-decoration:none">support@aurexconnect.xyz</a>
     </p>
   </td></tr>
 
@@ -89,7 +89,7 @@ async function send(to: string, subject: string, html: string) {
 export async function sendVerificationOtp(to: string, name: string, otp: string) {
   const html = wrap(`
     ${heading('Verify Your Email')}
-    ${para(`Hi <strong style="color:#fff">${name}</strong>, welcome to APXFund. Enter the code below to verify your email address and activate your account.`)}
+    ${para(`Hi <strong style="color:#fff">${name}</strong>, welcome to Aurexconnect. Enter the code below to verify your email address and activate your account.`)}
     <div style="text-align:center;margin:32px 0">
       <div style="display:inline-block;background:#0a0a14;border:2px solid #c9a84c;border-radius:14px;padding:20px 40px">
         <div style="font-size:11px;color:#c9a84c;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px">Verification Code</div>
@@ -97,10 +97,10 @@ export async function sendVerificationOtp(to: string, name: string, otp: string)
         <div style="font-size:11px;color:#555;margin-top:10px">Expires in 15 minutes</div>
       </div>
     </div>
-    ${para('If you did not create an APXFund account, you can safely ignore this email.')}
-    ${note('Do not share this code with anyone. APXFund will never ask for your OTP.')}
+    ${para('If you did not create an Aurexconnect account, you can safely ignore this email.')}
+    ${note('Do not share this code with anyone. Aurexconnect will never ask for your OTP.')}
   `)
-  await send(to, 'Your APXFund Verification Code', html)
+  await send(to, 'Your Aurexconnect Verification Code', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -108,7 +108,7 @@ export async function sendVerificationOtp(to: string, name: string, otp: string)
 // ═══════════════════════════════════════════════════════════════════════
 export async function sendWelcome(to: string, name: string) {
   const html = wrap(`
-    ${heading('Welcome to APXFund 🎉')}
+    ${heading('Welcome to Aurexconnect 🎉')}
     ${para(`Hi <strong style="color:#fff">${name}</strong>, your account has been verified and is fully active. You can now make your first deposit and start investing.`)}
     <div style="background:#0a0a14;border:1px solid #1e1e35;border-radius:10px;padding:20px;margin:20px 0">
       <div style="font-size:13px;font-weight:700;color:#c9a84c;margin-bottom:12px">QUICK START</div>
@@ -122,7 +122,7 @@ export async function sendWelcome(to: string, name: string) {
     ${btn('Go to Dashboard', `${BASE}/dashboard`)}
     ${note('Questions? Reply to this email or use live chat on our website.')}
   `)
-  await send(to, 'Welcome to APXFund — Your Account is Ready', html)
+  await send(to, 'Welcome to Aurexconnect — Your Account is Ready', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -140,7 +140,7 @@ export async function sendDepositPending(to: string, name: string, amount: numbe
     ${btn('View Transactions', `${BASE}/dashboard/transactions`)}
     ${note('If you did not make this request, contact support immediately.')}
   `)
-  await send(to, 'Deposit Request Received — APXFund', html)
+  await send(to, 'Deposit Request Received — Aurexconnect', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -172,10 +172,10 @@ export async function sendDepositRejected(to: string, name: string, amount: numb
     ${reason ? statusBox('Reason', reason, '#f59e0b') : ''}
     ${divider()}
     ${para('Please check the transaction hash you submitted and try again. If you believe this is an error, contact our support team with your proof of payment.')}
-    ${btn('Contact Support', `mailto:support@apxfund.xyz`)}
+    ${btn('Contact Support', `mailto:support@aurexconnect.xyz`)}
     ${btn('Try Again', `${BASE}/dashboard/deposit`)}
   `)
-  await send(to, 'Deposit Could Not Be Processed — APXFund', html)
+  await send(to, 'Deposit Could Not Be Processed — Aurexconnect', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -193,7 +193,7 @@ export async function sendWithdrawalPending(to: string, name: string, amount: nu
     ${btn('View Transactions', `${BASE}/dashboard/transactions`)}
     ${note('If you did not request this withdrawal, contact support immediately.')}
   `)
-  await send(to, 'Withdrawal Request Received — APXFund', html)
+  await send(to, 'Withdrawal Request Received — Aurexconnect', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -225,9 +225,9 @@ export async function sendWithdrawalRejected(to: string, name: string, amount: n
     ${reason ? statusBox('Reason', reason, '#f59e0b') : ''}
     ${divider()}
     ${para('Your balance has been fully restored. If you have any questions, please contact our support team.')}
-    ${btn('Contact Support', `mailto:support@apxfund.xyz`)}
+    ${btn('Contact Support', `mailto:support@aurexconnect.xyz`)}
   `)
-  await send(to, 'Withdrawal Request Declined — APXFund', html)
+  await send(to, 'Withdrawal Request Declined — Aurexconnect', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -254,7 +254,7 @@ export async function sendKycApproved(to: string, name: string) {
     ${para(`Hi <strong style="color:#fff">${name}</strong>, your identity has been successfully verified by our compliance team.`)}
     ${statusBox('KYC Status', 'Approved ✓', '#34d399')}
     ${divider()}
-    ${para('You now have full access to all APXFund investment plans, higher deposit limits, and unrestricted withdrawals.')}
+    ${para('You now have full access to all Aurexconnect investment plans, higher deposit limits, and unrestricted withdrawals.')}
     ${btn('Start Investing', `${BASE}/dashboard/plans`)}
   `)
   await send(to, '✅ KYC Verified — Full Access Unlocked', html)
@@ -320,25 +320,25 @@ export async function sendInvestmentMatured(to: string, name: string, planName: 
 export async function sendAccountSuspended(to: string, name: string) {
   const html = wrap(`
     ${heading('Account Suspended')}
-    ${para(`Hi <strong style="color:#fff">${name}</strong>, your APXFund account has been temporarily suspended pending a review.`)}
+    ${para(`Hi <strong style="color:#fff">${name}</strong>, your Aurexconnect account has been temporarily suspended pending a review.`)}
     ${statusBox('Account Status', 'Suspended', '#f87171')}
     ${divider()}
     ${para('If you believe this is a mistake or would like to appeal, please contact our support team immediately.')}
-    ${btn('Contact Support', `mailto:support@apxfund.xyz`)}
+    ${btn('Contact Support', `mailto:support@aurexconnect.xyz`)}
   `)
-  await send(to, 'Your APXFund Account Has Been Suspended', html)
+  await send(to, 'Your Aurexconnect Account Has Been Suspended', html)
 }
 
 export async function sendAccountReinstated(to: string, name: string) {
   const html = wrap(`
     ${heading('Account Reinstated')}
-    ${para(`Hi <strong style="color:#fff">${name}</strong>, your APXFund account has been reinstated and you now have full access again.`)}
+    ${para(`Hi <strong style="color:#fff">${name}</strong>, your Aurexconnect account has been reinstated and you now have full access again.`)}
     ${statusBox('Account Status', 'Active ✓', '#34d399')}
     ${divider()}
     ${para('Welcome back. If you have any questions, our support team is available 24/7.')}
     ${btn('Go to Dashboard', `${BASE}/dashboard`)}
   `)
-  await send(to, 'Your APXFund Account Has Been Reinstated', html)
+  await send(to, 'Your Aurexconnect Account Has Been Reinstated', html)
 }
 
 // ═══════════════════════════════════════════════════════════════════════

@@ -40,7 +40,7 @@ const PLANS = [
 
 const TESTIMONIALS = [
   { name: 'Michael R.', country: 'United States', rating: 5, initials: 'MR', color: '#c9a84c', text: 'Started with the Starter Portfolio and rolled returns into the Growth Fund. My balance reflected exactly what was promised at maturity. Withdrawals processed same day.' },
-  { name: 'Amira K.',   country: 'UAE',           rating: 5, initials: 'AK', color: '#60a5fa', text: 'I have been with APXFund for 8 months across three different plans. Every payout has been accurate and on time. KYC was straightforward and support responds fast.' },
+  { name: 'Amira K.',   country: 'UAE',           rating: 5, initials: 'AK', color: '#60a5fa', text: 'I have been with aurexconnect for 8 months across three different plans. Every payout has been accurate and on time. KYC was straightforward and support responds fast.' },
   { name: 'James T.',   country: 'United Kingdom',rating: 5, initials: 'JT', color: '#34d399', text: 'Transparent, reliable, and the support team is genuinely available 24/7. The dashboard gives full visibility of my portfolio at all times. Highly recommended.' },
 ]
 
@@ -89,12 +89,12 @@ export default function HomePage() {
       <section id="about-us" className="py-24 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="text-[#c9a84c] text-sm font-semibold uppercase tracking-widest mb-4">About APXFund</div>
+            <div className="text-[#c9a84c] text-sm font-semibold uppercase tracking-widest mb-4">About Aurexconnect</div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
               A Global Asset Management <span className="gold-text">Leader</span>
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              APXFund is a United States-based Asset and Stock Management Company with affiliates across Europe, Asia, and the Middle East. Established in 2016, we began trading stocks, shares, and bonds before expanding into Forex in 2018 and Cryptocurrency in 2019.
+              Aurexconnect is a United States-based Asset and Stock Management Company with affiliates across Europe, Asia, and the Middle East. Established in 2016, we began trading stocks, shares, and bonds before expanding into Forex in 2018 and Cryptocurrency in 2019.
             </p>
             <p className="text-gray-400 leading-relaxed mb-8">
               Our 130+ team of professionals employs research-driven quantitative strategies across a wide range of liquid asset classes. We partner with the highest-quality fund managers and deliver a consistently exceptional rate of return.

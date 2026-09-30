@@ -61,7 +61,7 @@ export default function PublicHeader() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <span>📍 3536 Badger Pond Lane, Pittsburgh, PA 15212, US</span>
-            <span>✉️ support@apxfund.xyz</span>
+            <span>✉️ support@aurexconnect.xyz</span>
           </div>
           <div className="flex items-center gap-4">
             <span>📞 +1 (412) 555-0198</span>
@@ -94,9 +94,9 @@ export default function PublicHeader() {
       }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <Image src="/logo.png" alt="APXFund Logo" width={36} height={36} />
+            <Image src="/logo.png" alt="aurexconnect Logo" width={36} height={36} />
             <span className="text-xl font-black tracking-tight">
-              <span className="gold-text">APX</span><span className="text-white">Fund</span>
+              aurexconnect
             </span>
           </Link>
 
